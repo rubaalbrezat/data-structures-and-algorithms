@@ -7,9 +7,9 @@ Use `forEach` to loop over the input array and work with each value.  Push the n
 ------------------------------------------------------------------------------------------------ */
 
 const addOne = (arr) => {
-  let resultArr = [];
+  let resArr = [];
   arr.forEach(num => { resultArr.push(num+1)});
-  return resultArr;
+  return resArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -19,9 +19,9 @@ Use `forEach` to loop over the input array. Modify each string, and add the upda
 ------------------------------------------------------------------------------------------------ */
 
 const addExclamation = (arr) => {
-let resultArr = [];
-arr.forEach (str => resultArr.push(`${str}!`));
-return resultArr;
+let resArr = [];
+arr.forEach (str => resArr.push(`${str}!`));
+return resArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -31,9 +31,9 @@ Use `forEach` to loop over the input array. The modified strings should each be 
 ------------------------------------------------------------------------------------------------ */
 
 const allUpperCase = (arr) => {
-  let resultArr = [];
-  arr.forEach(str => resultArr.push(str.toUpperCase()));
-  return resultArr;
+  let resArr = [];
+  arr.forEach(str => resArr.push(str.toUpperCase()));
+  return resArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -44,14 +44,14 @@ Use `forEach` to build a new array of strings, each string modified by the callb
 ------------------------------------------------------------------------------------------------ */
 
 const greeting = (word) => {
-  let newWord = `${word.toUpperCase()}!`;
-  return newWord;
+  let Word = `${word.toUpperCase()}!`;
+  return Word;
 };
 
 const speaker = (words, callback) => {
-  let resultArr = [];
-  words.forEach(word => resultArr.push(callback(word)));
-  return resultArr;
+  let resArr = [];
+  words.forEach(word => resArr.push(callback(word)));
+  return resArr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -110,11 +110,11 @@ Return the resulting output array.
 ------------------------------------------------------------------------------------------------ */
 
 const fizzbuzz = (arr) => {
-  let answer=[];
+  let ans=[];
   for(let i=1; i<=arr.length; i++){
-   (i%3===0 && i%5===0)? answer.push("Fizz Buzz"): (i%3===0)? answer.push("Fizz"): (i%5===0)? answer.push("Buzz"): answer.push(i);
+   (i%3===0 && i%5===0)? ans.push("Fizz Buzz"): (i%3===0)? ans.push("Fizz"): (i%5===0)? ans.push("Buzz"): ans.push(i);
   }
-  return answer;
+  return ans;
 };
 
 /* ------------------------------------------------------------------------------------------------
