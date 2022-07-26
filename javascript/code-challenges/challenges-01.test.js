@@ -6,12 +6,16 @@ Write a function named `addOne` that takes an array of numbers, and returns a ne
 Use `forEach` to loop over the input array and work with each value.  Push the new value into a local array. Return the local array;
 ------------------------------------------------------------------------------------------------ */
 
-const addOne = (arr) => {
-  let resArr = [];
-  arr.forEach(num => { resultArr.push(num+1)});
-  return resArr;
-};
 
+const addOne = (arr) => {
+  
+  const resArr = [];
+  arr.forEach((value) => {
+    resArr.push(value + 1);
+  });
+  return resArr;
+  
+};
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 Write a function named `addExclamation` that takes an array of strings, and returns a new array of the same strings with an "!" added to the end.
